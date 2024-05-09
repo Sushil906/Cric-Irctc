@@ -2,30 +2,20 @@
 
 import React from 'react'
 
-function Cric({main,image,heading,para,link,text}) {
+function Cric({image,heading,para,link,text}) {
   return (
 
+        <div  style={{border:"2px solid red",marginBottom:"20px",width:"800px",padding:"10px"}}>
 
-   
+                 <img src={image}/>
 
-    
-   
-    <div  style={{border:"2px solid red",marginBottom:"20px",width:"800px",padding:"10px"}}
-    >
+                 <h1>{heading}</h1> 
 
-             
-    
-    
-    
-    <img src={image}/>
+                 <p>{para}</p>
 
-     <h1>{heading}</h1> 
+                 <a href={link}>{text}</a>
 
-     <p>{para}</p>
-
-      <a href={link}>{text}</a>
-
-      </div>
+        </div>
   )
 }
 
